@@ -3,25 +3,44 @@ from space import Space
 import cv2
 import os
 import random
+import time
 
 particles = []
-for p in range(200):
+for p in range(30):
     particles.append(Particle(random.random(), random.random(), (0.0, 0.0), 0.0, -0.011))
 
-space = Space(1000,1000, particles)
+space = Space(400,400, particles)
 
-TOTAL_FRAMES = 2000
+TOTAL_FRAMES = 3000
+
+times = []
 
 for i in range(TOTAL_FRAMES):
+
+    start_time = time.perf_counter()
 
     for particle in particles:
         particle.updateVelocity(particles)
         particle.updateTemperature()
+
+    for particle in particles:
         particle.updatePosition()
 
-    space.updateGrid()
+    space.updateGridCircle()
 
     space.saveGridImage(f'images/{i}.png')
+
+    space.clearTemps()
+
+    end_time = time.perf_counter()
+    elapsed_time = end_time - start_time
+
+    #print("Elapsed time for one frame: ", elapsed_time, " seconds")
+
+    times.append(elapsed_time)
+
+
+print("average time for a frame: " + str(sum(times) / len(times)))
 
 image_folder = 'images'
 video_name = 'video.avi'

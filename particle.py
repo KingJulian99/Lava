@@ -11,6 +11,8 @@ class Particle:
         self.gravity = gravity
         self.RANDOM_FACTOR = random.random() * 0.2
         self.TEMP_INCREMENT = 0.65
+        self.COOL_LINE = 0.25
+        self.HEAT_LINE = 0.2
 
     def updatePosition(self):
         self.x_coord += self.velocity[0]
@@ -41,21 +43,24 @@ class Particle:
         for particle in allParticles:
             if particle != self:
                 if(self.getDistance(self, particle) < 0.08):
-                    if(self.getDistance(self, particle) < 0.01):
+                    if(self.getDistance(self, particle) < 0.03):
                         self.velocity = self.addRepulsion(self.velocity, particle)
                     else:
                         self.velocity = self.addAttraction(self.velocity, particle)
 
     def updateTemperature(self):
+
+        self.difference = 0.0
+
         if(self.temperature < 0):
             self.temperature = 0.0
 
         # Remove temperature if far away from heat source
-        if(self.temperature > 0 and self.y_coord >= 0.3):
+        if(self.temperature > 0 and self.y_coord >= self.COOL_LINE):
             self.temperature -= self.TEMP_INCREMENT * 0.5
 
         # Add temperature if close enough to floor
-        if(self.y_coord < 0.3 and self.temperature <= 2.8):
+        if(self.y_coord < self.HEAT_LINE and self.temperature <= 2.8):
             self.temperature += ( (2.0 - self.y_coord - self.RANDOM_FACTOR) ** 2 ) * self.TEMP_INCREMENT/2
 
     def addGravity(self, tupleOne):

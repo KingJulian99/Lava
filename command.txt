@@ -1,1 +1,3 @@
 ffmpeg -framerate 30 -i "%d.png" output.mp4
+
+ffmpeg -i %d.png output.gif
