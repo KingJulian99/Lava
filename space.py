@@ -11,7 +11,10 @@ class Space:
         self.particles = particles
         self.space = []
         self.temperatures = []
-        self.PARTICLE_RADIUS = 66
+        self.PARTICLE_RADIUS = 18
+        self.RED_FACTOR = 1.0
+        self.GREEN_FACTOR = 0.2
+        self.BLUE_FACTOR = 0.0
 
         for y in range(self.resolution_y):
             row = []
@@ -107,16 +110,26 @@ class Space:
                 row.append(0.0)
             self.space.append(row)
 
-
-    def saveGridImage(self, output_filename):
+    
+    def generateGridArray(self):
         pixels = self.gridToPixels()
 
         array = np.array(pixels, dtype=np.uint8)
 
+        return array
+
+
+    def saveGridImage(self, array, output_filename):
+
         new_image = Image.fromarray(array)
+        
+        new_image = new_image.resize((60, 60), resample=Image.BOX)
+        new_image = new_image.resize((40, 40), resample=Image.BOX)
         new_image = new_image.resize((10, 10), resample=Image.BOX)
 
         new_image.save(output_filename)
+
+        return new_image
 
     
     def generateGridImage(self):
@@ -137,8 +150,8 @@ class Space:
             for x in range(self.resolution_x):
 
                 if(self.space[y][x] == 1.0):
-                    height = max( 0.0, min(self.temperatures[y][x] * 35, 254) )
-                    pixel_row.append( ( 0.0, height // 4, height ) )
+                    height = max( 0.0, min(self.temperatures[y][x] * 25, 255) )
+                    pixel_row.append( ( self.RED_FACTOR * height, self.GREEN_FACTOR * height, self.BLUE_FACTOR * height ) )
                 else:
                     pixel_row.append((0, 0, 0))
 
@@ -146,4 +159,38 @@ class Space:
 
         return pixels
 
-    
+
+    def generateInterpolatedImages(self, old_array, new_array, FRAME_COUNT, frame_number):
+        old_array = old_array.tolist()
+        new_array = new_array.tolist()
+        
+        for i in range(FRAME_COUNT):
+            pixels = []
+
+            for y in range(self.resolution_y):
+                pixel_row = []
+                for x in range(self.resolution_x):
+
+                    tupleDifference = self.getTupleDifference(old_array[y][x], new_array[y][x])
+
+                    pixel_row.append( (old_array[y][x][0] + (tupleDifference[0]/FRAME_COUNT)*(i + 1), old_array[y][x][1] + (tupleDifference[1]/FRAME_COUNT)*(i + 1), old_array[y][x][2] + (tupleDifference[2]/FRAME_COUNT)*(i + 1)) )
+
+                pixels.append(pixel_row)
+
+            array = np.array(pixels, dtype=np.uint8)
+
+            new_interpolated_image = Image.fromarray(array)
+
+            new_interpolated_image = new_interpolated_image.resize((60, 60), resample=Image.BOX)
+            new_interpolated_image = new_interpolated_image.resize((40, 40), resample=Image.BOX)
+            new_interpolated_image = new_interpolated_image.resize((10, 10), resample=Image.BOX)
+
+            new_interpolated_image.save(f'images/{frame_number}.png')
+
+            frame_number += 1
+
+        return frame_number
+
+
+    def getTupleDifference(self, tupleOne, tupleTwo):
+        return ((tupleTwo[0] - tupleOne[0]), (tupleTwo[1] - tupleOne[1]), (tupleTwo[2] - tupleOne[2]))
