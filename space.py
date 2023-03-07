@@ -39,7 +39,6 @@ class Space:
 
 
     def updateGrid(self):
-        # Set all to 0.0
         self.clearGrid()
 
         step_x = 1.0/self.resolution_x
@@ -49,8 +48,6 @@ class Space:
             # Find the visual grid position of the particle and set to 1.0 
             y_position = particle.y_coord // step_y
             x_position = particle.x_coord // step_x
-
-            #self.space[int (self.resolution_y - 1) - int (y_position)][int (x_position)] = 1.0
 
             for y in range(-self.PARTICLE_RADIUS, self.PARTICLE_RADIUS):
 
