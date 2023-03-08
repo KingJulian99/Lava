@@ -51,15 +51,11 @@ for i in range(TOTAL_FRAMES):
 
     times.append(elapsed_time)
 
-    # color_change_increment = 0.075
+    color_change_increment = 0.075
 
-    # if(frame_number >= 300 and frame_number < 1000):
-    #     space.GREEN_FACTOR += color_change_increment
-    #     space.BLUE_FACTOR -= color_change_increment
-
-    # if(frame_number >= 1000):
+    # if(frame_number >= 800):
     #     space.RED_FACTOR += color_change_increment
-    #     space.GREEN_FACTOR -= color_change_increment
+    #     space.BLUE_FACTOR -= color_change_increment
 
     # if (space.RED_FACTOR > 1.0):
     #     space.RED_FACTOR = 1.0
@@ -67,7 +63,7 @@ for i in range(TOTAL_FRAMES):
     # if (space.BLUE_FACTOR < 0.0):
     #     space.BLUE_FACTOR = 0.0
 
-    # if (space.GREEN_FACTOR < 0.0):
+    # if (space.GREEN_FACTOR > 1.0):
     #     space.GREEN_FACTOR = 0.0
 
     frame_number += 1

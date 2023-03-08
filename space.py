@@ -12,9 +12,9 @@ class Space:
         self.space = []
         self.temperatures = []
         self.PARTICLE_RADIUS = 18
-        self.RED_FACTOR = 1.0
-        self.GREEN_FACTOR = 0.2
-        self.BLUE_FACTOR = 0.0
+        self.RED_FACTOR = 0.5
+        self.GREEN_FACTOR = 0.0
+        self.BLUE_FACTOR = 0.5
 
         for y in range(self.resolution_y):
             row = []
