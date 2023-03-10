@@ -1,6 +1,6 @@
 from particle import Particle
 from space import Space
-import cv2
+# import cv2
 import os
 import random
 import time
