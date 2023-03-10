@@ -110,7 +110,7 @@ class LED_CONTROLLER:
                 r, g, b = tuple_grid[row][col][0], tuple_grid[row][col][1], tuple_grid[row][col][2]
                 self.frame.setPixel(row, col, Color(r, g, b))
 
-        self.strip = frame.update(strip)
+        self.strip = self.frame.update(self.strip)
         self.strip.show()
 
 
