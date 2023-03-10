@@ -1,3 +1,5 @@
+from rpi_ws281x import *
+
 class Pixel:
     def __init__(self):
         self.color = Color(0,0,0)
