@@ -4,6 +4,9 @@ import cv2
 import os
 import random
 import time
+from lava import LED_CONTROLLER
+
+lava = LED_CONTROLLER()
 
 particles = []
 for p in range(30):
@@ -34,24 +37,19 @@ for i in range(TOTAL_FRAMES):
 
     array = space.generateGridArray()
 
-    if (has_been_prev_image and INTERPOLATION_FRAME_COUNT > 0):
-        frame_number = space.generateInterpolatedImages(prev_image, array, INTERPOLATION_FRAME_COUNT, frame_number)
+    # if (has_been_prev_image and INTERPOLATION_FRAME_COUNT > 0):
+    #     frame_number = space.generateInterpolatedImages(prev_image, array, INTERPOLATION_FRAME_COUNT, frame_number)
 
-    space.saveGridImage(array, f'images/{frame_number}.png')
+    # space.saveGridImage(array, f'images/{frame_number}.png')
+    print("trying to print grid..")
+    lava.showGridFrame(array.tolist(), 0.01, 0.01)
 
-    prev_image = array
-    has_been_prev_image = True
+    #prev_image = array
+    #has_been_prev_image = True
 
     space.clearTemps()
 
-    end_time = time.perf_counter()
-    elapsed_time = end_time - start_time
-
-    #print("Elapsed time for one frame: ", elapsed_time, " seconds")
-
-    times.append(elapsed_time)
-
-    color_change_increment = 0.075
+    #color_change_increment = 0.075
 
     # if(frame_number >= 800):
     #     space.RED_FACTOR += color_change_increment
@@ -68,8 +66,6 @@ for i in range(TOTAL_FRAMES):
 
     frame_number += 1
 
-
-print("average time for a frame: " + str(sum(times) / len(times)))
 
 image_folder = 'images'
 video_name = 'video.avi'
