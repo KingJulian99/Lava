@@ -113,7 +113,12 @@ class Space:
 
         array = np.array(pixels, dtype=np.uint8)
 
-        return array
+        new_image = Image.fromarray(array)
+        new_image = new_image.resize((60, 60), resample=Image.BOX)
+        new_image = new_image.resize((40, 40), resample=Image.BOX)
+        new_image = new_image.resize((10, 10), resample=Image.BOX)
+
+        return np.asarray(new_image)
 
 
     def saveGridImage(self, array, output_filename):
