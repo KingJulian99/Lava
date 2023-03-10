@@ -1,3 +1,5 @@
+from pixel import Pixel
+
 class Frame:
     def __init__(self):
         self.matrix = []
