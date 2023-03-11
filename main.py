@@ -11,7 +11,7 @@ for p in range(30):
 
 space = Space(400,400, particles)
 
-TOTAL_FRAMES = 3000
+TOTAL_FRAMES = 1000
 
 times = []
 

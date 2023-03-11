@@ -114,7 +114,10 @@ class Space:
         array = np.array(pixels, dtype=np.uint8)
 
         new_image = Image.fromarray(array)
-        new_image = new_image.resize((10, 10), resample=Image.BOX)
+        #new_image = new_image.resize((self.resolution_x//2, self.resolution_y//2), resample=Image.BOX)
+        #new_image = new_image.resize((self.resolution_x//2, self.resolution_y//2), resample=Image.BOX)
+        #new_image = new_image.resize((self.resolution_x//2, self.resolution_y//2), resample=Image.BOX)
+        #new_image = new_image.resize((10, 10), resample=Image.BOX)
 
         new_image.save(output_filename)
 
