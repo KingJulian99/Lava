@@ -5,7 +5,6 @@ from PIL import Image
 import os
 from frame import Frame
 from pixel import Pixel
-from line_profiler import profile
 
 LED_COUNT      = 100      # Number of LED pixels.
 LED_PIN        = 18      # GPIO pin connected to the pixels (18 uses PWM!).
@@ -105,7 +104,7 @@ class LED_CONTROLLER:
             time.sleep(interval)
 
 
-    @profile
+    
     def showGridFrame(self, tuple_grid, time_interval_physics, time_interval_interpolated):
         for row in range(10):
             for col in range(10):

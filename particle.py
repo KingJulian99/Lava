@@ -1,6 +1,5 @@
 from math import sqrt
 import random
-from line_profiler import profile
 
 class Particle:
 
@@ -15,7 +14,7 @@ class Particle:
         self.COOL_LINE = 0.25
         self.HEAT_LINE = 0.2
 
-    @profile
+    
     def updatePosition(self):
         self.x_coord += self.velocity[0]
         self.y_coord += self.velocity[1]
@@ -37,7 +36,7 @@ class Particle:
             self.velocity = (self.velocity[0], 0.0)
 
 
-    @profile
+    
     def updateVelocity(self, allParticles):
         # Updates the velocity of this particle. Currently doesn't support local neighbours 
         self.velocity = self.addGravity(self.velocity)
@@ -52,7 +51,7 @@ class Particle:
                         self.velocity = self.addAttraction(self.velocity, particle)
 
 
-    @profile
+    
     def updateTemperature(self):
 
         self.difference = 0.0

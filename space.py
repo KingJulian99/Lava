@@ -2,7 +2,6 @@ from math import sqrt
 from PIL import Image
 import numpy as np
 import time
-from line_profiler import profile
 
 class Space:
 
@@ -60,7 +59,7 @@ class Space:
                         self.temperatures[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] = (particle.temperature / 3.0)
 
     
-    @profile
+    
     def updateGridCircle(self):
         self.clearGrid()
 
@@ -110,7 +109,7 @@ class Space:
             self.space.append(row)
 
     
-    @profile
+    
     def generateGridArray(self):
         pixels = self.gridToPixels()
 
@@ -147,7 +146,7 @@ class Space:
         return new_image
 
     
-    @profile
+    
     def gridToPixels(self):
         pixels = []
 
