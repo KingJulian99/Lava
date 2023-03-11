@@ -2,6 +2,7 @@ from math import sqrt
 from PIL import Image
 import numpy as np
 import time
+import line_profiler
 
 class Space:
 
