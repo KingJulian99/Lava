@@ -1,6 +1,6 @@
 from math import sqrt
 import random
-import line_profiler
+from line_profiler import LineProfiler
 
 class Particle:
 
