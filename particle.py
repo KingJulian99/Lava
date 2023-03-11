@@ -14,6 +14,7 @@ class Particle:
         self.COOL_LINE = 0.25
         self.HEAT_LINE = 0.2
 
+
     def updatePosition(self):
         self.x_coord += self.velocity[0]
         self.y_coord += self.velocity[1]
@@ -47,6 +48,7 @@ class Particle:
                         self.velocity = self.addRepulsion(self.velocity, particle)
                     else:
                         self.velocity = self.addAttraction(self.velocity, particle)
+
 
     def updateTemperature(self):
 

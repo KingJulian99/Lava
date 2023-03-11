@@ -9,7 +9,7 @@ from lava import LED_CONTROLLER
 lava = LED_CONTROLLER()
 
 particles = []
-for p in range(30):
+for p in range(10):
     particles.append(Particle(random.random(), random.random(), (0.0, 0.0), 0.0, -0.011))
 
 space = Space(100,100, particles)
@@ -23,8 +23,6 @@ frame_number = 0
 prev_image = None
 has_been_prev_image = False
 for i in range(TOTAL_FRAMES):
-
-    start_time = time.perf_counter()
 
     for particle in particles:
         particle.updateVelocity(particles)
@@ -41,7 +39,7 @@ for i in range(TOTAL_FRAMES):
     #     frame_number = space.generateInterpolatedImages(prev_image, array, INTERPOLATION_FRAME_COUNT, frame_number)
 
     # space.saveGridImage(array, f'images/{frame_number}.png')
-    print("trying to print grid..")
+    print("trying to print grid.." + str(frame_number))
     lava.showGridFrame(array.tolist(), 0.01, 0.01)
 
     #prev_image = array
