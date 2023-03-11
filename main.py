@@ -5,6 +5,7 @@ import os
 import random
 import time
 from lava import LED_CONTROLLER
+import line_profiler
 
 lava = LED_CONTROLLER()
 
@@ -14,7 +15,7 @@ for p in range(10):
 
 space = Space(100,100, particles)
 
-TOTAL_FRAMES = 300
+TOTAL_FRAMES = 1
 INTERPOLATION_FRAME_COUNT = 4
 
 times = []

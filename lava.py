@@ -104,6 +104,7 @@ class LED_CONTROLLER:
             time.sleep(interval)
 
 
+    @profile
     def showGridFrame(self, tuple_grid, time_interval_physics, time_interval_interpolated):
         for row in range(10):
             for col in range(10):
