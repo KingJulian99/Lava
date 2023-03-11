@@ -5,7 +5,7 @@ import os
 import random
 import time
 from lava import LED_CONTROLLER
-from line_profiler import LineProfiler
+from line_profiler import profile
 
 lava = LED_CONTROLLER()
 
