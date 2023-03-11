@@ -1,20 +1,27 @@
 from particle import Particle
 from space import Space
-import cv2
+# import cv2
 import os
 import random
 import time
+from lava import LED_CONTROLLER
+
+lava = LED_CONTROLLER()
 
 particles = []
 for p in range(30):
     particles.append(Particle(random.random(), random.random(), (0.0, 0.0), 0.0, -0.011))
 
-space = Space(400,400, particles)
+space = Space(100,100, particles)
 
-TOTAL_FRAMES = 1000
+TOTAL_FRAMES = 300
+INTERPOLATION_FRAME_COUNT = 4
 
 times = []
 
+frame_number = 0
+prev_image = None
+has_been_prev_image = False
 for i in range(TOTAL_FRAMES):
 
     start_time = time.perf_counter()
@@ -28,34 +35,52 @@ for i in range(TOTAL_FRAMES):
 
     space.updateGridCircle()
 
-    space.saveGridImage(f'images/{i}.png')
+    array = space.generateGridArray()
+
+    # if (has_been_prev_image and INTERPOLATION_FRAME_COUNT > 0):
+    #     frame_number = space.generateInterpolatedImages(prev_image, array, INTERPOLATION_FRAME_COUNT, frame_number)
+
+    # space.saveGridImage(array, f'images/{frame_number}.png')
+    print("trying to print grid..")
+    lava.showGridFrame(array.tolist(), 0.01, 0.01)
+
+    #prev_image = array
+    #has_been_prev_image = True
 
     space.clearTemps()
 
-    end_time = time.perf_counter()
-    elapsed_time = end_time - start_time
+    #color_change_increment = 0.075
 
-    #print("Elapsed time for one frame: ", elapsed_time, " seconds")
+    # if(frame_number >= 800):
+    #     space.RED_FACTOR += color_change_increment
+    #     space.BLUE_FACTOR -= color_change_increment
 
-    times.append(elapsed_time)
+    # if (space.RED_FACTOR > 1.0):
+    #     space.RED_FACTOR = 1.0
+
+    # if (space.BLUE_FACTOR < 0.0):
+    #     space.BLUE_FACTOR = 0.0
+
+    # if (space.GREEN_FACTOR > 1.0):
+    #     space.GREEN_FACTOR = 0.0
+
+    frame_number += 1
 
 
-print("average time for a frame: " + str(sum(times) / len(times)))
+# image_folder = 'images'
+# video_name = 'video.avi'
 
-image_folder = 'images'
-video_name = 'video.avi'
+# images = [f"{i}.png" for i in range(TOTAL_FRAMES)]
 
-images = [f"{i}.png" for i in range(TOTAL_FRAMES)]
+# print(images)
 
-print(images)
+# frame = cv2.imread(os.path.join(image_folder, images[0]))
+# height, width, layers = frame.shape
 
-frame = cv2.imread(os.path.join(image_folder, images[0]))
-height, width, layers = frame.shape
+# video = cv2.VideoWriter(video_name, 0, 90, (width,height))
 
-video = cv2.VideoWriter(video_name, 0, 30, (width,height))
+# for image in images:
+#     video.write(cv2.imread(os.path.join(image_folder, image)))
 
-for image in images:
-    video.write(cv2.imread(os.path.join(image_folder, image)))
-
-cv2.destroyAllWindows()
-video.release()
+# cv2.destroyAllWindows()
+# video.release()
