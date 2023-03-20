@@ -34,7 +34,8 @@ def run():
         for particle in particles:
             particle.updatePosition()
 
-        space.updateGridCircle()
+        #space.updateGridCircle()
+        space.updateGrid()
 
         array = space.generateGridArray()
 
