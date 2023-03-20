@@ -17,7 +17,7 @@ def run():
 
     space = Space(100,100, particles)
 
-    TOTAL_FRAMES = 1
+    TOTAL_FRAMES = 1000
     INTERPOLATION_FRAME_COUNT = 4
 
     times = []
@@ -34,8 +34,8 @@ def run():
         for particle in particles:
             particle.updatePosition()
 
-        #space.updateGridCircle()
-        space.updateGrid()
+        space.updateGridCircle()
+        #space.updateGrid()
 
         array = space.generateGridArray()
 
