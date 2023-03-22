@@ -1,31 +1,32 @@
-Tue Mar 21 21:13:22 2023    output.dat
+Wed Mar 22 22:04:18 2023    output.dat
 
-         9573555 function calls (9573284 primitive calls) in 4.350 seconds
+         10665188 function calls (10664917 primitive calls) in 3.923 seconds
 
    Ordered by: call count
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-  3040740    0.185    0.000    0.185    0.000 {method 'append' of 'list' objects}
-1884778/1884747    0.125    0.000    0.125    0.000 {built-in method builtins.len}
-  1413876    0.227    0.000    0.227    0.000 {built-in method builtins.min}
-   843681    0.129    0.000    0.129    0.000 {built-in method math.dist}
-   843681    0.240    0.000    0.369    0.000 /home/julian/Documents/Lava/benchmarking/space.py:28(getDistance)
-   843681    0.251    0.000    0.620    0.000 /home/julian/Documents/Lava/benchmarking/space.py:32(getNormalizedDistance)
-   569389    0.079    0.000    0.080    0.000 {built-in method builtins.max}
-    44726    0.006    0.000    0.006    0.000 {built-in method math.sqrt}
-    36452    0.003    0.000    0.003    0.000 {built-in method builtins.abs}
-     9726    0.005    0.000    0.006    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:78(getDistance)
+  3040740    0.148    0.000    0.148    0.000 {method 'append' of 'list' objects}
+1869557/1869526    0.113    0.000    0.113    0.000 {built-in method builtins.len}
+  1465667    0.210    0.000    0.210    0.000 {built-in method builtins.min}
+   972000    0.642    0.000    0.755    0.000 /home/julian/Documents/Lava/benchmarking/space.py:92(liesInBounds)
+   859781    0.118    0.000    0.118    0.000 {built-in method math.dist}
+   859781    0.228    0.000    0.562    0.000 /home/julian/Documents/Lava/benchmarking/space.py:32(getNormalizedDistance)
+   859781    0.216    0.000    0.334    0.000 /home/julian/Documents/Lava/benchmarking/space.py:28(getDistance)
+   605080    0.071    0.000    0.071    0.000 {built-in method builtins.max}
+    44438    0.005    0.000    0.005    0.000 {built-in method math.sqrt}
+    36292    0.003    0.000    0.003    0.000 {built-in method builtins.abs}
+     9438    0.004    0.000    0.004    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:78(getDistance)
      2707    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
-     2242    0.001    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:90(addTuple)
+     2146    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:90(addTuple)
      2030    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
      1900    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:529(size)
      1584    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
      1000    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedRandom' objects}
      1000    0.001    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:18(updatePosition)
-     1000    0.004    0.000    0.014    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:40(updateVelocity)
-     1000    0.001    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:55(updateTemperature)
+     1000    0.003    0.000    0.010    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:40(updateVelocity)
+     1000    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:55(updateTemperature)
      1000    0.001    0.000    0.002    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:70(addGravity)
-     1000    0.001    0.000    0.002    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:75(addRandomness)
+     1000    0.001    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:75(addRandomness)
      1000    0.000    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:87(terminalVelocityModifier)
      1000    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:497(__init__)
       900    0.000    0.000    0.000    0.000 {method 'pixel_access' of 'ImagingCore' objects}
@@ -33,12 +34,12 @@ Tue Mar 21 21:13:22 2023    output.dat
       800    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
       800    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
       800    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/_binary.py:101(o32be)
-      800    0.001    0.000    0.002    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:533(_new)
-      600    0.001    0.000    0.001    0.000 {built-in method zlib.crc32}
+      800    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:533(_new)
+      600    0.000    0.000    0.000    0.000 {built-in method zlib.crc32}
       600    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:137(_crc32)
-      600    0.017    0.000    0.017    0.000 {method 'resize' of 'ImagingCore' objects}
-      600    0.002    0.000    0.020    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:1884(resize)
-      600    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2616(_check_size)
+      600    0.012    0.000    0.012    0.000 {method 'resize' of 'ImagingCore' objects}
+      600    0.001    0.000    0.015    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:1884(resize)
+      600    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2616(_check_size)
       599    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
       598    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
       581    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:234(__next)
@@ -49,63 +50,63 @@ Tue Mar 21 21:13:22 2023    output.dat
       246    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
       239    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
       238    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
-      226    0.000    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:81(addAttraction)
       220    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:244(_verbose_message)
-      200    0.314    0.002    0.314    0.002 {built-in method numpy.array}
-      200    0.002    0.000    0.002    0.000 {built-in method PIL._imaging.fill}
+      200    0.245    0.001    0.245    0.001 {built-in method numpy.array}
+      200    0.001    0.000    0.001    0.000 {built-in method PIL._imaging.fill}
       200    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_decoder}
       200    0.001    0.000    0.001    0.000 {method 'decode' of 'ImagingDecoder' objects}
       200    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
-      200    0.004    0.000    0.004    0.000 {method 'encode' of 'ImagingEncoder' objects}
+      200    0.003    0.000    0.003    0.000 {method 'encode' of 'ImagingEncoder' objects}
       200    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
       200    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:386(_getdecoder)
       200    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:409(_getencoder)
       200    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:510(__getattr__)
-      200    0.001    0.000    0.003    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:762(frombytes)
-      200    0.001    0.000    0.004    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2634(new)
-      200    0.001    0.000    0.008    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2673(frombytes)
-      200    0.000    0.000    0.009    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2711(frombuffer)
-      200    0.004    0.000    0.013    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2764(fromarray)
+      200    0.000    0.000    0.002    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:762(frombytes)
+      200    0.001    0.000    0.003    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2634(new)
+      200    0.000    0.000    0.006    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2673(frombytes)
+      200    0.000    0.000    0.006    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2711(frombuffer)
+      200    0.002    0.000    0.009    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2764(fromarray)
       198    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
       192    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:128(<listcomp>)
       192    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:126(_path_join)
       164    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
       162    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
       160    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:165(__getitem__)
+      146    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:81(addAttraction)
       132    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
       127    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
       127    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
       115    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
       103    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
-      100    0.003    0.000    0.003    0.000 {built-in method builtins.print}
-      100    0.005    0.000    0.005    0.000 {method 'close' of '_io.BufferedRandom' objects}
-      100    0.003    0.000    0.003    0.000 {method 'flush' of '_io.BufferedRandom' objects}
-      100    0.009    0.000    0.009    0.000 {built-in method io.open}
+      100    0.001    0.000    0.001    0.000 {built-in method builtins.print}
+      100    0.004    0.000    0.004    0.000 {method 'close' of '_io.BufferedRandom' objects}
+      100    0.002    0.000    0.002    0.000 {method 'flush' of '_io.BufferedRandom' objects}
+      100    0.007    0.000    0.007    0.000 {built-in method io.open}
       100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1039(__init__)
       100    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1043(write)
-      100    0.002    0.000    0.014    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1191(_save)
+      100    0.001    0.000    0.011    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1191(_save)
       100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:70(_tilesort)
-      100    0.001    0.000    0.007    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:476(_save)
-      100    0.001    0.000    0.005    0.000 {built-in method numpy.asarray}
+      100    0.001    0.000    0.005    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:476(_save)
+      100    0.001    0.000    0.004    0.000 {built-in method numpy.asarray}
       100    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_encoder}
       100    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.zip_encoder}
       100    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingEncoder' objects}
       100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/_util.py:5(isPath)
       100    0.000    0.000    0.001    0.000 /usr/lib/python3.10/posixpath.py:117(splitext)
       100    0.000    0.000    0.000    0.000 /usr/lib/python3.10/genericpath.py:121(_splitext)
-      100    1.796    0.018    2.878    0.029 /home/julian/Documents/Lava/benchmarking/space.py:64(updateGridCircle)
-      100    0.146    0.001    0.207    0.002 /home/julian/Documents/Lava/benchmarking/space.py:92(clearTemps)
-      100    0.133    0.001    0.191    0.002 /home/julian/Documents/Lava/benchmarking/space.py:103(clearGrid)
-      100    0.002    0.000    1.173    0.012 /home/julian/Documents/Lava/benchmarking/space.py:114(generateGridArray)
-      100    0.001    0.000    0.050    0.001 /home/julian/Documents/Lava/benchmarking/space.py:127(saveGridImage)
-      100    0.597    0.006    0.831    0.008 /home/julian/Documents/Lava/benchmarking/space.py:151(gridToPixels)
+      100    0.471    0.005    0.674    0.007 /home/julian/Documents/Lava/benchmarking/space.py:187(gridToPixels)
       100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:242(_conv_type_shape)
       100    0.000    0.000    0.008    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:314(preinit)
+      100    0.105    0.001    0.151    0.002 /home/julian/Documents/Lava/benchmarking/space.py:139(clearGrid)
+      100    0.000    0.000    0.039    0.000 /home/julian/Documents/Lava/benchmarking/space.py:163(saveGridImage)
+      100    0.001    0.000    0.938    0.009 /home/julian/Documents/Lava/benchmarking/space.py:150(generateGridArray)
+      100    0.107    0.001    0.153    0.002 /home/julian/Documents/Lava/benchmarking/space.py:128(clearTemps)
+      100    1.154    0.012    2.762    0.028 /home/julian/Documents/Lava/benchmarking/space.py:64(updateGridCircle)
       100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:595(_ensure_mutable)
       100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:658(__init__)
-      100    0.001    0.000    0.004    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:661(__array__)
-      100    0.001    0.000    0.002    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:694(tobytes)
-      100    0.001    0.000    0.039    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2130(save)
+      100    0.001    0.000    0.003    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:661(__array__)
+      100    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:694(tobytes)
+      100    0.001    0.000    0.031    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2130(save)
        85    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
        84    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
        78    0.000    0.000    0.000    0.000 {built-in method posix.stat}
@@ -123,7 +124,7 @@ Tue Mar 21 21:13:22 2023    output.dat
        61    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
        61    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:470(__setattr__)
        59    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:250(match)
-       55    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x55cabc2179a0}
+       55    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x55a8584e39a0}
        54    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
        54    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
        54    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
@@ -138,8 +139,8 @@ Tue Mar 21 21:13:22 2023    output.dat
        42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:380(cache_from_source)
        42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1356(_path_importer_cache)
        41    0.000    0.000    0.001    0.000 {built-in method builtins.__build_class__}
-       40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:12(_is_descriptor)
        40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:559(<lambda>)
+       40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:12(_is_descriptor)
        38    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:287(tell)
        37    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:173(append)
        35    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:71(_relax_case)
@@ -158,21 +159,21 @@ Tue Mar 21 21:13:22 2023    output.dat
        27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:357(__init__)
        27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:746(find_spec)
        27    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:921(_find_spec)
-     27/5    0.000    0.000    0.008    0.002 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
-     27/5    0.000    0.000    0.008    0.002 <frozen importlib._bootstrap>:1022(_find_and_load)
+     27/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
+     27/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap>:1022(_find_and_load)
        26    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:379(_delegate)
      26/3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:87(_compile)
        26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(has_location)
        26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:492(_init_module_attrs)
        26    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:564(module_from_spec)
-     26/5    0.000    0.000    0.008    0.002 <frozen importlib._bootstrap>:664(_load_unlocked)
+     26/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap>:664(_load_unlocked)
        23    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
        23    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
        23    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
        23    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:826(find_spec)
        23    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1399(_get_spec)
        23    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
-     22/1    0.000    0.000    4.350    4.350 {built-in method builtins.exec}
+     22/1    0.000    0.000    3.923    3.923 {built-in method builtins.exec}
        22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
        22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
        22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:180(_path_isabs)
@@ -202,7 +203,6 @@ Tue Mar 21 21:13:22 2023    output.dat
        16    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
        16    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:82(groups)
        16    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:356(_escape)
-       16    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:84(addRepulsion)
        15    0.000    0.000    0.000    0.000 {method 'items' of 'mappingproxy' objects}
      15/5    0.000    0.000    0.008    0.002 {built-in method builtins.__import__}
        15    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:265(_compile_charset)
@@ -223,10 +223,10 @@ Tue Mar 21 21:13:22 2023    output.dat
         9    0.000    0.000    0.000    0.000 {method 'pop' of 'set' objects}
         9    0.000    0.000    0.000    0.000 {built-in method sys.intern}
         9    0.000    0.000    0.000    0.000 {built-in method builtins.vars}
-        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:245(<genexpr>)
         9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:590(_find_data_type)
         9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:579(_get_mixins_)
         9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/collections/__init__.py:402(<genexpr>)
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:245(<genexpr>)
         8    0.000    0.000    0.000    0.000 {built-in method _sre.unicode_iscased}
         8    0.000    0.000    0.000    0.000 {built-in method _struct.calcsize}
         8    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:671(_register_basic)
@@ -266,13 +266,6 @@ Tue Mar 21 21:13:22 2023    output.dat
         3    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
         3    0.000    0.000    0.000    0.000 {built-in method builtins.any}
         3    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/re.py:249(compile)
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/re.py:288(_compile)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:82(__init__)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:165(__prepare__)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:198(<dictcomp>)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:222(<setcomp>)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:180(__new__)
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:423(__getattr__)
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:451(__members__)
         3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:483(_create_)
@@ -289,6 +282,13 @@ Tue Mar 21 21:13:22 2023    output.dat
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:928(fix_flags)
         3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_parse.py:944(parse)
         3    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3153(register_save_all)
+        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/re.py:249(compile)
+        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/re.py:288(_compile)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:82(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:165(__prepare__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:198(<dictcomp>)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:222(<setcomp>)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:180(__new__)
         2    0.000    0.000    0.000    0.000 {built-in method fromkeys}
         2    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
         2    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
@@ -297,6 +297,12 @@ Tue Mar 21 21:13:22 2023    output.dat
         2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
         2    0.000    0.000    0.000    0.000 {built-in method _abc._abc_register}
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:584(_can_use)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:485(_get_literal_prefix)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:516(_get_charset_prefix)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:433(_uniq)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/collections/__init__.py:328(namedtuple)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:110(register)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/_collections_abc.py:315(__subclasshook__)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:193(_checkLevel)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:219(_acquireLock)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:228(_releaseLock)
@@ -306,12 +312,6 @@ Tue Mar 21 21:13:22 2023    output.dat
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1366(_fixupParents)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1435(__init__)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:2071(getLogger)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:485(_get_literal_prefix)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:516(_get_charset_prefix)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:433(_uniq)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/collections/__init__.py:328(namedtuple)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:110(register)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/_collections_abc.py:315(__subclasshook__)
         1    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
         1    0.000    0.000    0.000    0.000 {built-in method _imp.create_dynamic}
         1    0.000    0.000    0.000    0.000 {built-in method _imp.exec_dynamic}
@@ -327,6 +327,10 @@ Tue Mar 21 21:13:22 2023    output.dat
         1    0.000    0.000    0.002    0.002 /usr/lib/python3.10/fractions.py:1(<module>)
         1    0.000    0.000    0.001    0.001 /usr/lib/python3.10/decimal.py:1(<module>)
         1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageOps.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/JpegPresets.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:47(PpmImageFile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:1(<module>)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:145(ChunkStream)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:237(iTXt)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:259(PngInfo)
@@ -335,10 +339,6 @@ Tue Mar 21 21:13:22 2023    output.dat
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1036(_idat)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1047(_fdat)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1(<module>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageOps.py:1(<module>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/JpegPresets.py:1(<module>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:47(PpmImageFile)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:1(<module>)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:60(BmpImageFile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:277(DibImageFile)
         1    0.000    0.000    0.001    0.001 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:1(<module>)
@@ -386,7 +386,7 @@ Tue Mar 21 21:13:22 2023    output.dat
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:801(value)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:980(__or__)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/types.py:176(__get__)
-        1    0.021    0.021    4.350    4.350 /home/julian/Documents/Lava/benchmarking/benchmark.py:8(runLava)
+        1    0.015    0.015    3.922    3.922 /home/julian/Documents/Lava/benchmarking/benchmark.py:8(runLava)
         1    0.002    0.002    0.002    0.002 /home/julian/Documents/Lava/benchmarking/space.py:9(__init__)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1163(__init__)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1174(create_module)

@@ -81,11 +81,47 @@ class Space:
 
                 for x in range(- int (width), int (width)):
 
-                    if( 0 <= ( int (self.resolution_y - 1) - int (y_position) - y ) <= (len(self.space) - 1) and 0 <= (int (x_position) - x) <= (len(self.space[0]) - 1)):
+                    if(self.liesInBounds(y_position, x_position, y, x)): 
 
                         self.space[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] = 1.0
                         #self.temperatures[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] = (self.getNormalizedDistance(x, y, 0, 0, self.PARTICLE_RADIUS) * 2.0)
                         self.temperatures[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] += (2.0 - min(1.0, (self.getNormalizedDistance(x, y, 0, 0, self.PARTICLE_RADIUS))) * 2.0)
+
+
+    # C
+    def liesInBounds(self, y_center_position, x_center_position, y, x):
+        if( 0 <= ( int (self.resolution_y - 1) - int (y_center_position) - y ) <= (len(self.space) - 1) and 0 <= (int (x_center_position) - x) <= (len(self.space[0]) - 1)):
+            return True
+        else:
+            return False
+        
+    # C - changes python data though? 
+    def updateGridCircle2(self):
+        self.clearGrid()
+
+        step_x = 1.0/self.resolution_x
+        step_y = 1.0/self.resolution_y
+        
+        for particle in self.particles:
+            y_position = particle.y_coord // step_y
+            x_position = particle.x_coord // step_x
+
+            for y in range(0, self.PARTICLE_RADIUS):
+
+                if(y == 0):
+                    width = self.PARTICLE_RADIUS
+                else:
+                    width = sqrt(self.PARTICLE_RADIUS**2 - y**2)
+
+                
+                for x in range(- int (width), int (width)):                    
+                    if(self.liesInBounds(y_position, x_position, y, x)): 
+                        self.space[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] = 1.0
+                        self.temperatures[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] += (2.0 - min(1.0, (self.getNormalizedDistance(x, y, 0, 0, self.PARTICLE_RADIUS))) * 2.0)
+
+                    if(self.liesInBounds(y_position, x_position, -y, x)): 
+                        self.space[int (self.resolution_y - 1) - int (y_position) - (-y)][int (x_position) - x] = 1.0
+                        self.temperatures[int (self.resolution_y - 1) - int (y_position) - (-y)][int (x_position) - x] += (2.0 - min(1.0, (self.getNormalizedDistance(x, -y, 0, 0, self.PARTICLE_RADIUS))) * 2.0)
 
 
 
