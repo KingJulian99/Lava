@@ -13,7 +13,7 @@ def runLava():
 
     space = Space(100,100, particles)
 
-    TOTAL_FRAMES = 100
+    TOTAL_FRAMES = 1
     INTERPOLATION_FRAME_COUNT = 4
 
     times = []
@@ -30,8 +30,14 @@ def runLava():
         for particle in particles:
             particle.updatePosition()
 
-        space.updateGridCircle()
+        space.clearGrid()
+        space.externalUpdateGridCircle()
+        #space.updateGridCircle()
         #space.updateGrid()
+        # Cython
+        # - clear grid
+        # call updateGridCircle with input variables
+
 
         array = space.generateGridArray()
 

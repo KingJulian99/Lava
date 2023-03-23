@@ -1,395 +1,394 @@
-Wed Mar 22 22:04:18 2023    output.dat
+Thu Mar 23 22:08:48 2023    output.dat
 
-         10665188 function calls (10664917 primitive calls) in 3.923 seconds
+         87463 function calls (87192 primitive calls) in 0.050 seconds
 
    Ordered by: internal time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-      100    1.154    0.012    2.762    0.028 /home/julian/Documents/Lava/benchmarking/space.py:64(updateGridCircle)
-   972000    0.642    0.000    0.755    0.000 /home/julian/Documents/Lava/benchmarking/space.py:92(liesInBounds)
-      100    0.471    0.005    0.674    0.007 /home/julian/Documents/Lava/benchmarking/space.py:187(gridToPixels)
-      200    0.245    0.001    0.245    0.001 {built-in method numpy.array}
-   859781    0.228    0.000    0.562    0.000 /home/julian/Documents/Lava/benchmarking/space.py:32(getNormalizedDistance)
-   859781    0.216    0.000    0.334    0.000 /home/julian/Documents/Lava/benchmarking/space.py:28(getDistance)
-  1465667    0.210    0.000    0.210    0.000 {built-in method builtins.min}
-  3040740    0.148    0.000    0.148    0.000 {method 'append' of 'list' objects}
-   859781    0.118    0.000    0.118    0.000 {built-in method math.dist}
-1869557/1869526    0.113    0.000    0.113    0.000 {built-in method builtins.len}
-      100    0.107    0.001    0.153    0.002 /home/julian/Documents/Lava/benchmarking/space.py:128(clearTemps)
-      100    0.105    0.001    0.151    0.002 /home/julian/Documents/Lava/benchmarking/space.py:139(clearGrid)
-   605080    0.071    0.000    0.071    0.000 {built-in method builtins.max}
-        1    0.015    0.015    3.922    3.922 /home/julian/Documents/Lava/benchmarking/benchmark.py:8(runLava)
-      600    0.012    0.000    0.012    0.000 {method 'resize' of 'ImagingCore' objects}
-      100    0.007    0.000    0.007    0.000 {built-in method io.open}
-    44438    0.005    0.000    0.005    0.000 {built-in method math.sqrt}
-     9438    0.004    0.000    0.004    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:78(getDistance)
-      100    0.004    0.000    0.004    0.000 {method 'close' of '_io.BufferedRandom' objects}
-      200    0.003    0.000    0.003    0.000 {method 'encode' of 'ImagingEncoder' objects}
-    36292    0.003    0.000    0.003    0.000 {built-in method builtins.abs}
-     1000    0.003    0.000    0.010    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:40(updateVelocity)
-      200    0.002    0.000    0.009    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2764(fromarray)
-      100    0.002    0.000    0.002    0.000 {method 'flush' of '_io.BufferedRandom' objects}
-        1    0.002    0.002    0.002    0.002 /home/julian/Documents/Lava/benchmarking/space.py:9(__init__)
-      600    0.001    0.000    0.015    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:1884(resize)
-      100    0.001    0.000    0.001    0.000 {built-in method builtins.print}
-      100    0.001    0.000    0.011    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1191(_save)
-      100    0.001    0.000    0.031    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2130(save)
-      200    0.001    0.000    0.001    0.000 {built-in method PIL._imaging.fill}
+        1    0.009    0.009    0.012    0.012 /home/julian/Documents/Lava/benchmarking/space.py:196(gridToPixels)
+        1    0.008    0.008    0.015    0.015 {external_methods.updateGridCircle}
+        4    0.004    0.001    0.004    0.001 {built-in method numpy.array}
+    40941    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
+     7995    0.003    0.000    0.007    0.000 /home/julian/Documents/Lava/benchmarking/space.py:33(getNormalizedDistance)
+     7995    0.003    0.000    0.004    0.000 /home/julian/Documents/Lava/benchmarking/space.py:29(getDistance)
+        1    0.002    0.002    0.002    0.002 /home/julian/Documents/Lava/benchmarking/space.py:137(clearTemps)
+        1    0.002    0.002    0.002    0.002 /home/julian/Documents/Lava/benchmarking/space.py:10(__init__)
+     7995    0.001    0.000    0.001    0.000 {built-in method math.dist}
+        1    0.001    0.001    0.002    0.002 /home/julian/Documents/Lava/benchmarking/space.py:148(clearGrid)
        21    0.001    0.000    0.001    0.000 {built-in method marshal.loads}
-      100    0.001    0.000    0.938    0.009 /home/julian/Documents/Lava/benchmarking/space.py:150(generateGridArray)
-      800    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:533(_new)
-     1000    0.001    0.000    0.002    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:70(addGravity)
-      100    0.001    0.000    0.005    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:476(_save)
-     1000    0.001    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:75(addRandomness)
-      200    0.001    0.000    0.001    0.000 {method 'decode' of 'ImagingDecoder' objects}
-     1000    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:497(__init__)
-      300    0.001    0.000    0.002    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1025(putchunk)
-      200    0.001    0.000    0.003    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2634(new)
-      200    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:386(_getdecoder)
-      100    0.001    0.000    0.004    0.000 {built-in method numpy.asarray}
-      900    0.001    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:788(load)
-     1000    0.001    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:18(updatePosition)
-      100    0.001    0.000    0.003    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:661(__array__)
-     2146    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:90(addTuple)
-      200    0.000    0.000    0.006    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2673(frombytes)
-      200    0.000    0.000    0.002    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:762(frombytes)
-      100    0.000    0.000    0.039    0.000 /home/julian/Documents/Lava/benchmarking/space.py:163(saveGridImage)
-      100    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:694(tobytes)
-      600    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2616(_check_size)
-     1000    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:55(updateTemperature)
-     2707    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
-      600    0.000    0.000    0.000    0.000 {built-in method zlib.crc32}
-      200    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:409(_getencoder)
-      599    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
-        1    0.000    0.000    0.000    0.000 {built-in method _imp.create_dynamic}
-      800    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
-      600    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:137(_crc32)
-      200    0.000    0.000    0.006    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2711(frombuffer)
+     6258    0.001    0.000    0.001    0.000 {built-in method builtins.min}
+     6244    0.001    0.000    0.001    0.000 {built-in method builtins.max}
+        1    0.001    0.001    0.001    0.001 {built-in method _imp.create_dynamic}
+        2    0.000    0.000    0.000    0.000 {method 'tolist' of 'numpy.ndarray' objects}
        41    0.000    0.000    0.001    0.000 {built-in method builtins.__build_class__}
-     1000    0.000    0.000    0.001    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:87(terminalVelocityModifier)
-      100    0.000    0.000    0.001    0.000 /usr/lib/python3.10/posixpath.py:117(splitext)
-      200    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_decoder}
-     1900    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:529(size)
-      800    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/_binary.py:101(o32be)
      15/3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_parse.py:494(_parse)
-      146    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:81(addAttraction)
        78    0.000    0.000    0.000    0.000 {built-in method posix.stat}
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3.10/genericpath.py:121(_splitext)
-     2030    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
+        1    0.000    0.000    0.004    0.004 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:1(<module>)
        35    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1536(find_spec)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:180(__new__)
-       55    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x55a8584e39a0}
        21    0.000    0.000    0.000    0.000 {built-in method io.open_code}
-        1    0.000    0.000    0.002    0.002 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:1(<module>)
-      900    0.000    0.000    0.000    0.000 {method 'pixel_access' of 'ImagingCore' objects}
-     1584    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.050    0.050 /home/julian/Documents/Lava/benchmarking/benchmark.py:8(runLava)
+        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:180(__new__)
+       55    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x564b72c559a0}
       581    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:234(__next)
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:242(_conv_type_shape)
-     1000    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedRandom' objects}
-      103    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
-      200    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:510(__getattr__)
-      100    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.zip_encoder}
-      598    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
-      100    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_encoder}
-       21    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+        6    0.000    0.000    0.000    0.000 {method 'resize' of 'ImagingCore' objects}
       524    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:255(get)
-      800    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+       21    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
      26/3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:87(_compile)
-      400    0.000    0.000    0.000    0.000 {method 'join' of 'bytes' objects}
-       21    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:950(get_code)
       192    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:128(<listcomp>)
-       42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:380(cache_from_source)
+       21    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap_external>:950(get_code)
        27    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:921(_find_spec)
+       42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:380(cache_from_source)
       192    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:126(_path_join)
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/_util.py:5(isPath)
+       21    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1070(get_data)
        46    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:89(__setitem__)
-      200    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
-      200    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
-       26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:492(_init_module_attrs)
         2    0.000    0.000    0.000    0.000 {built-in method builtins.eval}
-      239    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
-     27/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap>:1022(_find_and_load)
-     26/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap>:664(_load_unlocked)
-      100    0.000    0.000    0.001    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1043(write)
-      115    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+      203    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.050    0.050 <string>:1(<module>)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/collections/__init__.py:328(namedtuple)
-       23    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1399(_get_spec)
+       26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:492(_init_module_attrs)
+      826    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        2    0.000    0.000    0.000    0.000 {method 'encode' of 'ImagingEncoder' objects}
+     27/5    0.000    0.000    0.011    0.002 <frozen importlib._bootstrap>:1022(_find_and_load)
+     26/5    0.000    0.000    0.010    0.002 <frozen importlib._bootstrap>:664(_load_unlocked)
        27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:179(_get_module_lock)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:343(PngStream)
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:658(__init__)
-     27/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:595(_ensure_mutable)
-      246    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+       12    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:105(__new__)
+       23    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1399(_get_spec)
+     27/5    0.000    0.000    0.011    0.002 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:222(<setcomp>)
-       61    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:470(__setattr__)
+      301    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
       220    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:244(_verbose_message)
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1039(__init__)
-      100    0.000    0.000    0.008    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:314(preinit)
-     22/1    0.000    0.000    3.923    3.923 {built-in method builtins.exec}
-       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:721(spec_from_file_location)
-      160    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:165(__getitem__)
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1070(get_data)
-       42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+        1    0.000    0.000    0.000    0.000 {built-in method io.open}
+       61    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:470(__setattr__)
         4    0.000    0.000    0.000    0.000 {built-in method _imp.exec_builtin}
-     28/8    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:175(getwidth)
-      164    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+  575/544    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+      160    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:165(__getitem__)
+       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:721(spec_from_file_location)
        21    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:125(release)
-     17/5    0.000    0.000    0.008    0.002 <frozen importlib._bootstrap>:1053(_handle_fromlist)
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:100(acquire)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:553(<listcomp>)
+     17/5    0.000    0.000    0.011    0.002 <frozen importlib._bootstrap>:1053(_handle_fromlist)
+       90    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:78(getDistance)
+     28/8    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:175(getwidth)
+       42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2764(fromarray)
        12    0.000    0.000    0.000    0.000 {built-in method _abc._abc_init}
-       15    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:292(_optimize_charset)
+     22/1    0.000    0.000    0.050    0.050 {built-in method builtins.exec}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:553(<listcomp>)
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:100(acquire)
+        1    0.000    0.000    0.016    0.016 /home/julian/Documents/Lava/benchmarking/space.py:64(externalUpdateGridCircle)
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:125(release)
        78    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:404(parent)
+     21/5    0.000    0.000    0.010    0.002 <frozen importlib._bootstrap_external>:877(exec_module)
        21    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:670(_compile_bytecode)
-     21/5    0.000    0.000    0.007    0.001 <frozen importlib._bootstrap_external>:877(exec_module)
-      238    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
-       26    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:564(module_from_spec)
+       15    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:292(_optimize_charset)
        63    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
+       26    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:564(module_from_spec)
+      238    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
       426    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
-     13/3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_parse.py:436(_parse_sub)
        76    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:9(<lambda>)
-      100    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:70(_tilesort)
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:585(_classify_pyc)
+     13/3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_parse.py:436(_parse_sub)
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedRandom' objects}
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:40(updateVelocity)
         3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:483(_create_)
        78    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
-      132    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
-      198    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:198(cb)
-       46    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:44(_is_private)
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:71(__init__)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:585(_classify_pyc)
       162    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
-      100    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingEncoder' objects}
-       85    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+       46    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:44(_is_private)
         1    0.000    0.000    0.001    0.001 /usr/lib/python3.10/signal.py:1(<module>)
-        1    0.000    0.000    0.003    0.003 /usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py:1(<module>)
-       43    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:391(cached)
-     46/5    0.000    0.000    0.008    0.002 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
-       73    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:897(__exit__)
-     15/5    0.000    0.000    0.008    0.002 {built-in method builtins.__import__}
-       73    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:893(__enter__)
-       84    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
-       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:510(_get_cached)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1(<module>)
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:71(__init__)
+      198    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       85    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:198(cb)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+     15/5    0.000    0.000    0.011    0.002 {built-in method builtins.__import__}
+        1    0.000    0.000    0.004    0.004 /usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py:1(<module>)
+      7/2    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
         1    0.000    0.000    0.002    0.002 /usr/lib/python3.10/subprocess.py:1(<module>)
        46    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:22(_is_dunder)
+       84    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
        21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:618(_validate_timestamp_pyc)
        27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:169(__enter__)
+       73    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:897(__exit__)
+       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:510(_get_cached)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1(<module>)
+     46/5    0.000    0.000    0.011    0.002 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+       43    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:391(cached)
        22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1531(_get_spec)
-      7/2    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
-       40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:12(_is_descriptor)
-        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:590(_find_data_type)
+        2    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.fill}
+       73    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:893(__enter__)
+        1    0.000    0.000    0.016    0.016 /home/julian/Documents/Lava/benchmarking/space.py:159(generateGridArray)
        46    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:33(_is_sunder)
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/re.py:288(_compile)
+       40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:12(_is_descriptor)
+        3    0.000    0.000    0.002    0.001 /usr/lib/python3.10/re.py:288(_compile)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:1884(resize)
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:590(_find_data_type)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'flush' of '_io.BufferedRandom' objects}
+        1    0.000    0.000    0.002    0.002 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:421(ImageFileDirectory_v2)
+       23    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
+       42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1356(_path_importer_cache)
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:671(_register_basic)
        15    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:265(_compile_charset)
        27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:357(__init__)
-        8    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:671(_register_basic)
-       23    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
        21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:542(_check_name_wrapper)
-       42    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1356(_path_importer_cache)
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:536(_convert_)
        62    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:161(__len__)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:1(<module>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:421(ImageFileDirectory_v2)
+        1    0.000    0.000    0.003    0.003 /usr/lib/python3/dist-packages/PIL/GifImagePlugin.py:1(<module>)
+        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:536(_convert_)
        59    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:250(match)
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1089(path_stats)
-        1    0.000    0.000    0.001    0.001 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:1(<module>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageColor.py:1(<module>)
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_compile.py:783(compile)
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:746(find_spec)
-        1    0.000    0.000    0.002    0.002 /usr/lib/python3/dist-packages/PIL/GifImagePlugin.py:1(<module>)
-      127    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
-      127    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
-       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
-       38    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:287(tell)
-       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:6(__init__)
-       12    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:105(__new__)
-       37    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:173(append)
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:1(<module>)
-        4    0.000    0.000    0.000    0.000 {built-in method _imp.create_builtin}
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_parse.py:944(parse)
-       30    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:112(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageColor.py:1(<module>)
+      127    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1089(path_stats)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1191(_save)
+       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
+      127    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+       99    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:533(_new)
+        1    0.000    0.000    0.011    0.011 /usr/lib/python3/dist-packages/PIL/Image.py:2130(save)
+        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_compile.py:783(compile)
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/fractions.py:38(Fraction)
-       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:560(_compile_info)
-       11    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:359(__call__)
-       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:165(__init__)
-        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:579(_get_mixins_)
-       16    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:356(_escape)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:626(_find_new_)
+       38    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:287(tell)
+       30    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:112(__init__)
         1    0.000    0.000    0.001    0.001 /usr/lib/python3.10/decimal.py:1(<module>)
+       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
+        4    0.000    0.000    0.000    0.000 {built-in method _imp.create_builtin}
         1    0.000    0.000    0.002    0.002 /usr/lib/python3.10/fractions.py:1(<module>)
-       78    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:21(<lambda>)
-       15    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3165(register_extension)
-       16    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:700(Popen)
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:746(find_spec)
+        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/sre_parse.py:944(parse)
+       37    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:173(append)
+        4    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        1    0.000    0.000    0.011    0.011 /usr/lib/python3/dist-packages/PIL/Image.py:314(preinit)
+       10    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:497(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:476(_save)
+       16    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:356(_escape)
+        2    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_decoder}
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:579(_get_mixins_)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2634(new)
+       11    0.000    0.000    0.001    0.000 /usr/lib/python3.10/enum.py:359(__call__)
        23    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:826(find_spec)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:654(decorator)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:268(getuntil)
-       61    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
-       63    0.000    0.000    0.000    0.000 {built-in method from_bytes}
-       54    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
-       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:180(_path_isabs)
-       13    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:447(_simple)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:626(_find_new_)
+       16    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
        77    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:16(<lambda>)
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:268(getuntil)
+        2    0.000    0.000    0.000    0.000 {method 'decode' of 'ImagingDecoder' objects}
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:788(load)
        54    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1040(__init__)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:584(_can_use)
-        7    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3116(register_open)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:165(__prepare__)
+       15    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3165(register_extension)
+       78    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:21(<lambda>)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:560(_compile_info)
+       27    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:165(__init__)
+       63    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+       48    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:654(decorator)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1025(putchunk)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:386(_getdecoder)
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:70(addGravity)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:700(Popen)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:294(IFDRational)
+       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:180(_path_isabs)
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:75(addRandomness)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:584(_can_use)
         5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:85(opengroup)
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:421(spec_from_loader)
-       54    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.asarray}
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:6(__init__)
+       54    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        7    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3116(register_open)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:694(tobytes)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1040(__init__)
         2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1315(getLogger)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpGradientFile.py:1(<module>)
-       76    0.000    0.000    0.000    0.000 {method 'isupper' of 'str' objects}
-       40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:559(<lambda>)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:646(_use_posix_spawn)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:165(__prepare__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:762(frombytes)
+       61    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
         7    0.000    0.000    0.000    0.000 /usr/lib/python3.10/fractions.py:276(_operator_fallbacks)
-       23    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
-       23    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageOps.py:1(<module>)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1366(_fixupParents)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:1(<module>)
-        3    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
-       30    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:421(spec_from_loader)
+       65    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+       13    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:447(_simple)
+       76    0.000    0.000    0.000    0.000 {method 'isupper' of 'str' objects}
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:60(BmpImageFile)
-       35    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:71(_relax_case)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:986(__and__)
-       23    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:622(_code)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1435(__init__)
-        1    0.000    0.000    0.001    0.001 /usr/lib/python3/dist-packages/PIL/ImagePalette.py:1(<module>)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:198(<dictcomp>)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:225(__init__)
-       14    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:169(__setitem__)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:2071(getLogger)
-       11    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
-       49    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:569(_check_for_existing_members)
-        8    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:678(__new__)
-       26    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:379(_delegate)
-       16    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:82(groups)
+       54    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpGradientFile.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:661(__array__)
+       90    0.000    0.000    0.000    0.000 {built-in method math.sqrt}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:409(_getencoder)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2616(_check_size)
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:254(_requires_builtin_wrapper)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:923(ImageFileDirectory_v1)
-        4    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3176(register_extensions)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:646(_use_posix_spawn)
+        3    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageOps.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2673(frombytes)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:225(__init__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1366(_fixupParents)
+       41    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:2071(getLogger)
+       33    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+       14    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:169(__setitem__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:1(<module>)
+        6    0.000    0.000    0.000    0.000 {built-in method zlib.crc32}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1435(__init__)
+       40    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:559(<lambda>)
+       23    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.001    0.001 /usr/lib/python3/dist-packages/PIL/ImagePalette.py:1(<module>)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:986(__and__)
+       23    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
+        1    0.000    0.000    0.011    0.011 /home/julian/Documents/Lava/benchmarking/space.py:172(saveGridImage)
+       30    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:18(updatePosition)
+       50    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
+       23    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:198(<dictcomp>)
+       26    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:379(_delegate)
+       11    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+       20    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:90(addTuple)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:1779(AppendingTiffWriter)
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:55(updateTemperature)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:2711(frombuffer)
+       35    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:71(_relax_case)
+       49    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:424(CompletedProcess)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:622(_code)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:82(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:569(_check_for_existing_members)
+       16    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:82(groups)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageChops.py:1(<module>)
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:770(create_module)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:424(CompletedProcess)
-       26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(has_location)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3176(register_extensions)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/JpegPresets.py:1(<module>)
        21    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:82(__init__)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:1779(AppendingTiffWriter)
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:678(__new__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:923(ImageFileDirectory_v1)
+       10    0.000    0.000    0.000    0.000 /home/julian/Documents/Lava/benchmarking/particle.py:87(terminalVelocityModifier)
         8    0.000    0.000    0.000    0.000 {built-in method _struct.calcsize}
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1065(get_filename)
-        7    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3142(register_save)
-        3    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
-        6    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:49(decorator)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImagePalette.py:25(ImagePalette)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:80(ImageFile)
-      7/2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:121(__subclasscheck__)
-       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:874(create_module)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:433(_uniq)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:219(_acquireLock)
+        1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_encoder}
+       26    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(has_location)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GifImagePlugin.py:50(GifImageFile)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:137(_crc32)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py:1(<module>)
-        6    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:619(isstring)
+      7/2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:121(__subclasscheck__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:980(__or__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:1022(TiffImageFile)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:49(decorator)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1065(get_filename)
+        3    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/_binary.py:101(o32be)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:81(BaseSelector)
-        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/collections/__init__.py:402(<genexpr>)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:619(isstring)
+       19    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:529(size)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImagePalette.py:25(ImagePalette)
         1    0.000    0.000    0.000    0.000 {method 'close' of 'select.epoll' objects}
-        7    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3131(register_mime)
+        3    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        7    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3142(register_save)
+        8    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:76(__init__)
+       19    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        7    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3131(register_mime)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:433(_uniq)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:80(ImageFile)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:219(_acquireLock)
+        2    0.000    0.000    0.000    0.000 {built-in method _abc._abc_register}
+        9    0.000    0.000    0.000    0.000 {method 'pixel_access' of 'ImagingCore' objects}
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:97(closegroup)
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.vars}
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/collections/__init__.py:402(<genexpr>)
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:778(exec_module)
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:423(__getattr__)
-       19    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:1022(TiffImageFile)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:980(__or__)
+        1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.zip_encoder}
+        3    0.000    0.000    0.002    0.001 /usr/lib/python3.10/re.py:249(compile)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:510(__getattr__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:110(register)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:874(create_module)
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:81(_combine_flags)
         9    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:245(<genexpr>)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:97(closegroup)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:485(_get_literal_prefix)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1174(create_module)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:668(PngImageFile)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PaletteFile.py:1(<module>)
         3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_parse.py:928(fix_flags)
-        9    0.000    0.000    0.000    0.000 {built-in method sys.intern}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:668(PngImageFile)
-        3    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
-        9    0.000    0.000    0.000    0.000 {built-in method builtins.vars}
-       14    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GifImagePlugin.py:50(GifImageFile)
-       16    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:516(_get_charset_prefix)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:81(_combine_flags)
-        2    0.000    0.000    0.000    0.000 {built-in method _abc._abc_register}
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:110(register)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:135(<dictcomp>)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:579(PyDecoder)
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1174(create_module)
+       16    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        9    0.000    0.000    0.000    0.000 {built-in method sys.intern}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:343(PngStream)
+       16    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       14    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/posixpath.py:117(splitext)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:786(__init__)
        15    0.000    0.000    0.000    0.000 {method 'items' of 'mappingproxy' objects}
-        3    0.000    0.000    0.001    0.000 /usr/lib/python3.10/re.py:249(compile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:242(_conv_type_shape)
+        4    0.000    0.000    0.000    0.000 {method 'join' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py:340(JpegImageFile)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:228(_releaseLock)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:135(<dictcomp>)
+        2    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
+       10    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedRandom' objects}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:451(__members__)
+        9    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/_collections_abc.py:315(__subclasshook__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:485(_get_literal_prefix)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:104(CalledProcessError)
         5    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
         3    0.000    0.000    0.000    0.000 {built-in method builtins.any}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:145(ChunkStream)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:228(_releaseLock)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:451(__members__)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:104(CalledProcessError)
-        1    0.000    0.000    0.000    0.000 {built-in method posix.confstr}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:237(iTXt)
-        9    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:141(TimeoutExpired)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1261(append)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:291(SelectSelector)
-        8    0.000    0.000    0.000    0.000 {built-in method _sre.unicode_iscased}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:145(ChunkStream)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3153(register_save_all)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/_util.py:5(isPath)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/types.py:176(__get__)
+        8    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:516(_get_charset_prefix)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1182(exec_module)
        11    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
         2    0.000    0.000    0.000    0.000 {built-in method fromkeys}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py:340(JpegImageFile)
-        3    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:3153(register_save_all)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/genericpath.py:121(_splitext)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.confstr}
+        2    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:48(_wraps)
+        8    0.000    0.000    0.000    0.000 {built-in method _sre.unicode_iscased}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:342(_PollLikeSelector)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:207(_BaseSelectorImpl)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:337(Parser)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:786(__init__)
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1182(exec_module)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/types.py:176(__get__)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:443(EpollSelector)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:1261(append)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:342(_PollLikeSelector)
-        6    0.000    0.000    0.000    0.000 /usr/lib/python3.10/signal.py:48(_wraps)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:664(_register_writer)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:193(_checkLevel)
-        5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:665(decorator)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageSequence.py:19(Iterator)
-        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/_collections_abc.py:315(__subclasshook__)
-        4    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:477(_get_iscased)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:434(PollSelector)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageSequence.py:1(<module>)
-        4    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:7(abstractmethod)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:237(iTXt)
         5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:653(_register_loader)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:61(_SelectorMapping)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:259(PngInfo)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:141(TimeoutExpired)
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:664(_register_writer)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:443(EpollSelector)
         9    0.000    0.000    0.000    0.000 {method 'pop' of 'set' objects}
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:795(is_package)
-        5    0.000    0.000    0.000    0.000 {built-in method _sre.unicode_tolower}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py:22(GimpPaletteFile)
-        3    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PaletteFile.py:19(PaletteFile)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:47(PpmImageFile)
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py:665(decorator)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.10/logging/__init__.py:193(_checkLevel)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageSequence.py:19(Iterator)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1043(write)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:61(_SelectorMapping)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python3.10/abc.py:7(abstractmethod)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python3.10/sre_compile.py:477(_get_iscased)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:311(StubImageFile)
-        3    0.000    0.000    0.000    0.000 {method 'mro' of 'type' objects}
-        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        5    0.000    0.000    0.000    0.000 {built-in method _sre.unicode_tolower}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/selectors.py:434(PollSelector)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py:277(DibImageFile)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpGradientFile.py:66(GradientFile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageSequence.py:1(<module>)
+        3    0.000    0.000    0.000    0.000 {method 'mro' of 'type' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py:47(PpmImageFile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py:22(GimpPaletteFile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PaletteFile.py:19(PaletteFile)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:259(PngInfo)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/enum.py:801(value)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1039(__init__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:795(is_package)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:595(_ensure_mutable)
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/Image.py:658(__init__)
+        3    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpGradientFile.py:66(GradientFile)
         2    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
-        1    0.000    0.000    0.000    0.000 {built-in method _imp.exec_dynamic}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1036(_idat)
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:568(PyCodecState)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1163(__init__)
         2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
-        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1047(_fdat)
-        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:568(PyCodecState)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1036(_idat)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/GimpGradientFile.py:104(GimpGradientFile)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.exec_dynamic}
         2    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/PngImagePlugin.py:1047(_fdat)
         1    0.000    0.000    0.000    0.000 /usr/lib/python3.10/subprocess.py:101(SubprocessError)
         1    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
+        1    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingEncoder' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3/dist-packages/PIL/ImageFile.py:70(_tilesort)
 
 
