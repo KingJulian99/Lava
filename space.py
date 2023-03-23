@@ -2,6 +2,7 @@ from math import sqrt
 from PIL import Image
 import numpy as np
 import time
+import external_methods
 
 class Space:
 
@@ -85,6 +86,16 @@ class Space:
                         self.space[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] = 1.0
                         #self.temperatures[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] = (self.getNormalizedDistance(x, y, 0, 0, self.PARTICLE_RADIUS) * 2.0)
                         self.temperatures[int (self.resolution_y - 1) - int (y_position) - y][int (x_position) - x] += (2.0 - min(1.0, (self.getNormalizedDistance(x, y, 0, 0, self.PARTICLE_RADIUS))) * 2.0)
+
+
+
+    def externalUpdateGridCircle(self):
+        space_array = np.array(self.space, dtype=np.float32)
+        temp_array = np.array(self.temperatures, dtype=np.float32)
+        external_methods.updateGridCircle(self, self.resolution_y, self.resolution_x, self.PARTICLE_RADIUS, space_array, temp_array)
+
+        self.space = space_array.tolist()
+        self.temperatures = temp_array.tolist()
 
 
 
